@@ -1,0 +1,52 @@
+desc   registerUser
+rout   http://localhost:4000/api/v1/register
+access public
+inputs=name,email,password
+
+
+desc   login
+rout   http://localhost:4000/api/v1/login
+access public
+inputs=,email,password
+
+desc   updateProfile
+rout   http://localhost:4000/api/v1/updateProfile
+access User ONLY
+
+desc   get all food items
+rout   http://localhost:4000/api/v1/allmenu
+access public
+
+desc   getSingle food items
+rout   http://localhost:4000/api/v1/menu/:id (get)
+access public
+
+desc   createMenu
+rout   http://localhost:4000/api/v1/menu/:id (post)
+access admin ONLY
+inputs=name,catagory,price,description
+
+
+desc   deletemenu
+rout   http://localhost:4000/api/v1/menu/:id (delete)
+access admin ONLY
+
+desc   get all users
+rout   http://localhost:4000/api/v1/allusers
+access admin ONLY
+
+
+desc   update user info & chnage user to admin
+rout   http://localhost:4000/api/v1/user/:id  (put)
+access admin ONLY
+
+desc   updateProdut
+rout   http://localhost:4000/api/v1/menu/:id  (put)
+access admin ONLY
+
+
+admin email = admin@gmail.com
+              pass = 123456
+
+
+
