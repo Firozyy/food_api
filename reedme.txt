@@ -50,3 +50,5 @@ admin email = admin@gmail.com
 
 
 
+fsdf sdfsdf = admin@gmail.com
+              pass = 123456
